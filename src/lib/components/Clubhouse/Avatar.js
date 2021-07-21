@@ -9,9 +9,14 @@ const getActiveTemplate = (size) => {
     )
 }
 
-const getNormalTemplate = (size) => <div className={`cl-avatar avatar-${size}`}></div>
+const getNormalTemplate = (size) => {
+    return(
+        <div className={`cl-avatar avatar-${size}`}></div>
+    )
+}
 
 export default function Avatar({size, isActive}) {
-    const template = isActive ? getActiveTemplate(size) : getNormalTemplate(size)
+    const avatarSize = size ? size : 'md'
+    const template = isActive ? getActiveTemplate(avatarSize) : getNormalTemplate(avatarSize)
     return template
 }
