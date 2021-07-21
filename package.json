@@ -10,7 +10,7 @@
   "files": [ "dist", "README.md" ],
   "repository": {
       "type": "git",
-      "url": "git+https://github.com/ACGCET/nutro-components.git"
+      "url": "git+https://github.com/Marigameo/nutro-components.git"
   },
   "dependencies": {
     "@babel/cli": "^7.14.8",
