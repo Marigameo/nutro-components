@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  font-family: Nunito;
+}
+/* card UI */
+.cl-card {
+  background: #f2efe4;
+  border: 2px solid rgba(153, 153, 153, 0.48);
+  box-sizing: border-box;
+  box-shadow: 0px 1.82712px 61.2086px -0.913561px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+.card-short {
+  max-width: 300px;
+  height: auto;
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
+.cl-card-content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1rem;
+  text-align: center;
+  color: #000000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* end of card UI */
+
+/* Avatar component */
+
+.cl-avatar {
+  background: url(https://ik.imagekit.io/learnwen/components/1143b508b6ac78a72d0f741b7f5792ab3237ffee_m_MgVF3aW7R.jpeg)
+    no-repeat;
+  background-size: cover;
+}
+
+.avatar-sm {
+  width: 36px;
+  height: 36px;
+  border-radius: 1rem;
+}
+
+.avatar-md {
+  width: 56px;
+  height: 56px;
+  border-radius: 1.4rem;
+}
+
+.avatar-lg {
+  width: 76px;
+  height: 76px;
+  border-radius: 2rem;
+}
+
+.avatar-active {
+  border: 4px solid #e6e3d6;
+  border-radius: 2rem;
+  padding: 1px;
+  display: inline-block;
+}
+/* end of avatar component */
+
+/* button component */
+.btn {
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #55ab67;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  font-weight: normal;
+  color: #da615c;
+  background-color: #f2f2f2;
+}
+
+.btn-icon {
+  font-size: 10px;
+  margin-right: 4px;
+}
+
+.btn-outline {
+  background-color: white;
+  color: #5b75a6;
+  border: 2px solid #5b75a6;
+}
+
+/* end of button component */
