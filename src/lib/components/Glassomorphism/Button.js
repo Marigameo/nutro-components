@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.css'
 
-export default function Button({ children, onClick, size="normal" }) {
+export default function GlassButton({ children, onClick, size="normal" }) {
 
     return (
        <button
