@@ -101,7 +101,7 @@ body {
 .btn-outline {
   background-color: white;
   color: #5b75a6;
-  border: 2px solid #5b75a6;
+  border: 2px solid #5b75a6 !important;
 }
 
 /* end of button component */

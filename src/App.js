@@ -1,6 +1,7 @@
 import ClubhouseCard from "./lib/components/Clubhouse/ClubhouseCard";
-import Avatar from './lib/components/Clubhouse/Avatar'
-import Button from './lib/components/Clubhouse/Button'
+import ClubhouseAvatar from './lib/components/Clubhouse/Avatar'
+import ClubhouseButton from './lib/components/Clubhouse/Button'
+import GradientButton from './lib/components/Gradients/Button';
 
 function App() {
   return (
@@ -31,15 +32,23 @@ function App() {
                 <div>Clubhouse</div>
             </div>
       </ClubhouseCard>
-      <Avatar size="sm"/>
-      <Avatar size="md"/>
-      <Avatar size="lg"/>
-      <Avatar size="lg" isActive={true}/>
-      <Button type="primary">+ Start a room</Button>
-      <Button type="secondary">
+      <ClubhouseAvatar size="sm"/>
+      <ClubhouseAvatar size="md"/>
+      <ClubhouseAvatar size="lg"/>
+      <ClubhouseAvatar size="lg" isActive={true}/>
+      <ClubhouseButton type="primary">+ Start a room</ClubhouseButton>
+      <ClubhouseButton type="secondary">
         <span className="btn-icon">✌️</span>Leave quitely
-      </Button>
-      <Button type="outline">Follow</Button>
+      </ClubhouseButton>
+      <ClubhouseButton type="outline">Follow</ClubhouseButton>
+      <div style={{margin: '2rem'}}>
+        <GradientButton type="mango" size="normal">Mango shade</GradientButton>
+        <GradientButton type="lavendar" size="small">Lavendar shade</GradientButton>
+        <GradientButton type="greenApple"
+        size="large"
+          onClick= {() => console.log('I just got cliked')}
+        >Green apple shade</GradientButton>
+    </div>
     </div>
   );
 }

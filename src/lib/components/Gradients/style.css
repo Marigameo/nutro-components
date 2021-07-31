@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+/*   BUTTON COMPONENTS  */
+.btn {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: Poppins;
+}
+.btn-grad {
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  font-weight: 800;
+  box-shadow: 0 0 20px #eee;
+  box-shadow: 0 4px 15px 0 rgba(119, 119, 119, 0.75);
+}
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-greenApple {
+  background-image: linear-gradient(
+    to right,
+    #16a085 0%,
+    #f4d03f 51%,
+    #16a085 100%
+  );
+}
+
+.btn-mango {
+  background-image: linear-gradient(
+    to right,
+    #f2994a 0%,
+    #f2c94c 51%,
+    #f2994a 100%
+  );
+}
+
+.btn-lavendar {
+  background-image: linear-gradient(
+    to right,
+    #6253e1,
+    #852d91,
+    #a3a1ff,
+    #f24645
+  );
+}
+
+.btn-small {
+  padding: 8px 20px;
+  border-radius: 6px;
+}
+
+.btn-large {
+  padding: 15px 40px;
+  border-radius: 10px;
+}
+.btn-normal {
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+/* END OF BUTTON */
