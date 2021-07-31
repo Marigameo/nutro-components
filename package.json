@@ -3,7 +3,7 @@
   "description": "nutro-components are simple UI components inspired from popular apps that can be plugged into favourite side projects",
   "author": "mariappangameo@gmail.com",
   "keywords": ["react", "components", "ui", "inspirations"],
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
