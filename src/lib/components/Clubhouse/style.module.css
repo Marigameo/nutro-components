@@ -4,7 +4,7 @@ body {
   font-family: Nunito;
 }
 /* card UI */
-.cl-card {
+.cl_card {
   background: #f2efe4;
   border: 2px solid rgba(153, 153, 153, 0.48);
   box-sizing: border-box;
@@ -13,18 +13,18 @@ body {
   padding: 1rem;
 }
 
-.card-short {
+.card_short {
   max-width: 300px;
   height: auto;
 }
 
-.card-title {
+.card_title {
   font-weight: 900;
   font-size: 18px;
   line-height: 1.5rem;
 }
 
-.cl-card-content {
+.cl_card_content {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -33,7 +33,7 @@ body {
   color: #000000;
 }
 
-.text-center {
+.text_center {
   text-align: center;
 }
 
@@ -41,31 +41,31 @@ body {
 
 /* Avatar component */
 
-.cl-avatar {
+.cl_avatar {
   background: url(https://ik.imagekit.io/learnwen/components/1143b508b6ac78a72d0f741b7f5792ab3237ffee_m_MgVF3aW7R.jpeg)
     no-repeat;
   background-size: cover;
 }
 
-.avatar-sm {
+.avatar_sm {
   width: 36px;
   height: 36px;
   border-radius: 1rem;
 }
 
-.avatar-md {
+.avatar_md {
   width: 56px;
   height: 56px;
   border-radius: 1.4rem;
 }
 
-.avatar-lg {
+.avatar_lg {
   width: 76px;
   height: 76px;
   border-radius: 2rem;
 }
 
-.avatar-active {
+.avatar_active {
   border: 4px solid #e6e3d6;
   border-radius: 2rem;
   padding: 1px;
@@ -81,24 +81,24 @@ body {
   cursor: pointer;
 }
 
-.btn-primary {
+.btn_primary {
   background: #55ab67;
   color: #ffffff;
   font-weight: bold;
 }
 
-.btn-secondary {
+.btn_secondary {
   font-weight: normal;
   color: #da615c;
   background-color: #f2f2f2;
 }
 
-.btn-icon {
+.btn_icon {
   font-size: 10px;
   margin-right: 4px;
 }
 
-.btn-outline {
+.btn_outline {
   background-color: white;
   color: #5b75a6;
   border: 2px solid #5b75a6 !important;

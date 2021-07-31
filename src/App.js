@@ -2,6 +2,8 @@ import ClubhouseCard from "./lib/components/Clubhouse/ClubhouseCard";
 import ClubhouseAvatar from './lib/components/Clubhouse/Avatar'
 import ClubhouseButton from './lib/components/Clubhouse/Button'
 import GradientButton from './lib/components/Gradients/Button';
+import GlassButton from './lib/components/Glassomorphism/Button'
+import './App.css'
 
 function App() {
   return (
@@ -46,9 +48,22 @@ function App() {
         <GradientButton type="lavendar" size="small">Lavendar shade</GradientButton>
         <GradientButton type="greenApple"
         size="large"
-          onClick= {() => console.log('I just got cliked')}
+          onClick= {() => alert('I just got cliked')}
         >Green apple shade</GradientButton>
     </div>
+    <div className="glassmorphism">
+         <div className="inner">
+      <GlassButton type="glass"
+       >Normal</GlassButton>
+       <GlassButton type="glass"
+       size="small"
+       >Small</GlassButton>
+       <GlassButton type="glass"
+       size="large"
+       onClick={() => alert('button clicked')}
+       >Large</GlassButton>
+       </div>
+  </div>
     </div>
   );
 }

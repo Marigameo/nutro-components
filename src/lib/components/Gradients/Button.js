@@ -1,11 +1,11 @@
 import React from 'react'
-import './style.css'
+import styles from './style.module.css'
 
 export default function GradientButton({ children, type, onClick, size="normal" }) {
 
     return (
        <button
-        className={`btn btn-grad btn-${type} btn-${size}`} 
+        className={`${styles.btn} ${styles.btn_grad} ${styles[`btn_${type}`]} ${styles[`btn_${size}`]}`} 
         onClick={onClick}
         >{children}</button>
     )

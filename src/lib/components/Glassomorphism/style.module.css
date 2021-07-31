@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+/*   BUTTON COMPONENTS  */
+.btn {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: Poppins;
+}
+.btn_glass {
+  padding: 15px 45px;
+  text-align: center;
+  color: yellow;
+  font-weight: 800;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+}
+.btn_glass:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.btn_small {
+  padding: 8px 20px !important;
+  border-radius: 6px;
+}
+.btn_large {
+  padding: 15px 40px !important;
+  border-radius: 10px;
+}
+.btn_normal {
+  padding: 15px 20px !important;
+  border-radius: 8px;
+}
+/* END OF BUTTON */

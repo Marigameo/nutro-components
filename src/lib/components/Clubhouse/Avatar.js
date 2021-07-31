@@ -1,17 +1,17 @@
 import React from 'react'
-import './style.css'
+import styles from './style.module.css'
 
 const getActiveTemplate = (size) => {
     return(
-        <div className="avatar-active">
-            <div className={`cl-avatar avatar-${size}`}></div>
+        <div className={styles.avatar_active}>
+            <div className={`${styles.cl_avatar} ${styles[`avatar_${size}`]}`}></div>
         </div>
     )
 }
 
 const getNormalTemplate = (size) => {
     return(
-        <div className={`cl-avatar avatar-${size}`}></div>
+        <div className={`${styles.cl_avatar} ${styles[`avatar_${size}`]}`}></div>
     )
 }
 
