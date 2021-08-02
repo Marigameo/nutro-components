@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+.cookie_banner {
+  border-radius: 0.25rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(241, 241, 255);
+  border: 1px solid rgb(204, 203, 255);
+  position: fixed;
+  z-index: 50;
+  right: 0;
+  bottom: 0;
+}
+
+.text_base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text_base a {
+  color: inherit;
+}
+
+.action_btn {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  color: rgba(0, 0, 0, 0.87);
+  background-color: transparent;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 0.125rem;
+  padding: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+  cursor: pointer;
+  --tw-text-opacity: 1;
+  transition-duration: 0.2s;
+}
+
+.action_btn:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  --tw-border-opacity: 1;
+  border-color: rgb(32, 32, 51);
+}
+
+.select {
+  padding: 1rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+.searchWrapper svg:not(:root) {
+  overflow: hidden;
+}
+.searchWrapper {
+  display: flex;
+  margin: 1rem;
+}
+.searchWrapper svg {
+  top: 1rem;
+  right: 2.3rem;
+  bottom: 0;
+  position: relative;
+}
+
+.search {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: 1px solid rgb(193, 193, 198);
+  border-radius: 0.125rem;
+  overflow: hidden;
+  align-items: center;
+  cursor: text;
+  width: 100%;
+  flex: 1 1 auto;
+  height: 3rem;
+  display: inline-flex;
+}
+
+.search:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.search:focus-within {
+  outline: 2px solid transparent;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px,
+    rgb(85, 83, 255) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  outline-offset: 2px;
+  border: 1px solid rgb(85, 83, 255);
+}
+
+.search_icon {
+  color: rgb(0, 0, 0);
+  padding-left: 0.875rem;
+  align-items: center;
+  display: flex;
+}
+
+.input_search {
+  box-sizing: border-box;
+  appearance: none;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+}
+
+.btn {
+  font-size: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 0.125rem;
+  padding: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  outline: none;
+  font-weight: 700;
+}
+
+.btn_primary {
+  background-color: rgb(85, 83, 255);
+  border: 1px solid rgb(85, 83, 255);
+}
+.btn_primary:hover {
+  border: 1px solid rgb(35, 32, 204);
+  background-color: rgb(35, 32, 204);
+}
+
+.btn_outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  color: rgba(0, 0, 0, 0.87);
+  background-color: transparent;
+}
+.btn_outlined:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgb(32, 32, 51);
+}
+.btn_primary_outlined {
+  border: 1px solid rgba(85, 83, 255, 0.5);
+  color: rgb(85, 83, 255);
+  background-color: white;
+}
+.btn_primary_outlined:hover {
+  background-color: rgba(85, 83, 255, 0.04);
+  border: 1px solid rgb(85, 83, 255);
+}
+@media only screen and (min-width: 600px) {
+  .cookie_banner {
+    max-width: 24rem;
+    margin: 3rem;
+  }
+}

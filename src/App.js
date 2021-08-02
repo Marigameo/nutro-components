@@ -4,10 +4,35 @@ import ClubhouseButton from './lib/components/Clubhouse/Button'
 import GradientButton from './lib/components/Gradients/Button';
 import GlassButton from './lib/components/Glassomorphism/Button'
 import './App.css'
+import CookieBanner from "./lib/components/educative/CookieBanner";
+import EdSelect from "./lib/components/educative/EdSelect";
+import EdSearch from "./lib/components/educative/EdSearch";
+import EdButton from "./lib/components/educative/EdButton";
 
+const cookieText = 'We use cookies to ensure you get the best experience on our website. Please review our <a className={styles.underline} href="/#">Privacy Policy</a> to learn more.'
+const buttonText = 'Got it!'
+
+const options = [
+  {id: 1, name: 'USA'},
+  {id: 2, name: 'Canada'},
+  {id:3, name: 'UK'},
+  {id:4, name: "Brazil"},
+  {id:5, name: 'India'}
+]
 function App() {
   return (
     <div className="App">
+      <div style={{display: 'flex', justifyContent: 'space-around', margin: '1rem'}}>
+        <EdButton type='primary'>Explore courses &amp; paths</EdButton>
+        <EdButton type='outlined'>Explore courses &amp; paths</EdButton>
+        <EdButton type='primary_outlined'>Explore courses &amp; paths</EdButton>
+      </div>
+      <div style={{margin: '3rem'}}>
+        <EdSearch/>
+        <EdSelect options={options} />
+      </div>
+
+      <CookieBanner cookieText={cookieText} buttonText={buttonText}/>
       <ClubhouseCard>
         <h3 className="card-title">YNK Gamehouse</h3>
             <p className="cl-card-content">
