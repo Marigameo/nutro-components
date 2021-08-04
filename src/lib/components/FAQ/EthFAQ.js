@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from './style.module.css'
 
 
-export default function Ethereum({ faqs, title = 'Frequently asked questions'}) {
+export default function EthFAQ({ faqs, title = 'Frequently asked questions'}) {
     const [faq, setFaq] = useState(faqs)
 
     const toggleActive = (index) => {

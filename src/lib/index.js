@@ -7,7 +7,8 @@ import CookieBanner from "./components/educative/CookieBanner";
 import EdButton from "./components/educative/EdButton";
 import EdSearch from "./components/educative/EdSearch";
 import EdSelect from './components/educative/EdSelect'
+import EthFAQ from './components/FAQ/EthFAQ'
 
 export { ClubhouseCard, ClubhouseAvatar, ClubhouseButton, 
     GradientButton, GlassButton, EdButton, EdSearch, EdSelect, 
-    CookieBanner }
+    CookieBanner, EthFAQ }
