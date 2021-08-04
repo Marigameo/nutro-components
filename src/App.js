@@ -8,6 +8,7 @@ import CookieBanner from "./lib/components/educative/CookieBanner";
 import EdSelect from "./lib/components/educative/EdSelect";
 import EdSearch from "./lib/components/educative/EdSearch";
 import EdButton from "./lib/components/educative/EdButton";
+import EthFAQ from './lib/components/FAQ/Ethereum'
 
 const cookieText = 'We use cookies to ensure you get the best experience on our website. Please review our <a className={styles.underline} href="/#">Privacy Policy</a> to learn more.'
 const buttonText = 'Got it!'
@@ -19,9 +20,44 @@ const options = [
   {id:4, name: "Brazil"},
   {id:5, name: 'India'}
 ]
+
+const faqs = [
+    {
+        question: 'When will Eth2 ship?',
+        answer: 'Eth2 is a set of distinct upgrades with different ship dates.',
+        more: "Eth holders certainly don't need to do anything. Your ETH will not need changing or upgrading. There's almost certain to be scams telling you otherwise, so be careful.The merge and shard chain upgrades may impact dapp developers. But the specifications have not been finalised yet, so there's no immediate action required.",
+        isActive: false
+    },
+    {
+        question: 'When will Eth2 ship?',
+        answer: 'Eth2 is a set of distinct upgrades with different ship dates.',
+        more: "Eth holders certainly don't need to do anything. Your ETH will not need changing or upgrading. There's almost certain to be scams telling you otherwise, so be careful.The merge and shard chain upgrades may impact dapp developers. But the specifications have not been finalised yet, so there's no immediate action required.",
+        isActive: false
+    },
+    {
+        question: 'When will Eth2 ship?',
+        answer: 'Eth2 is a set of distinct upgrades with different ship dates.',
+        more: "Eth holders certainly don't need to do anything. Your ETH will not need changing or upgrading. There's almost certain to be scams telling you otherwise, so be careful.The merge and shard chain upgrades may impact dapp developers. But the specifications have not been finalised yet, so there's no immediate action required.",
+        isActive: false
+    },
+    {
+        question: 'When will Eth2 ship?',
+        answer: 'Eth2 is a set of distinct upgrades with different ship dates.',
+        more: "Eth holders certainly don't need to do anything. Your ETH will not need changing or upgrading. There's almost certain to be scams telling you otherwise, so be careful.The merge and shard chain upgrades may impact dapp developers. But the specifications have not been finalised yet, so there's no immediate action required.",
+        isActive: false
+    },
+    {
+        question: 'When will Eth2 ship?',
+        answer: 'Eth2 is a set of distinct upgrades with different ship dates.',
+        more: "Eth holders certainly don't need to do anything. Your ETH will not need changing or upgrading. There's almost certain to be scams telling you otherwise, so be careful.The merge and shard chain upgrades may impact dapp developers. But the specifications have not been finalised yet, so there's no immediate action required.",
+        isActive: false
+    },
+]
+
 function App() {
   return (
     <div className="App">
+        <EthFAQ faqs={faqs}/>
       <div style={{display: 'flex', justifyContent: 'space-around', margin: '1rem'}}>
         <EdButton type='primary'>Explore courses &amp; paths</EdButton>
         <EdButton type='outlined'>Explore courses &amp; paths</EdButton>

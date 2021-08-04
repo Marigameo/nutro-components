@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.EthfaqWrapper {
+  padding: 1rem 2rem;
+}
+.divident {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.moreData {
+  border-top: 1px solid rgb(229, 229, 229);
+  margin-top: 1rem;
+  padding-top: 25px;
+}
+.headerText {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.faqContainer {
+  width: 100%;
+}
+.expandableCard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+.question {
+  width: 100%;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 2px;
+  padding: 1.3rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.answer {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(102, 102, 102);
+}
+.rightSection {
+  color: rgb(28, 28, 225);
+  cursor: pointer;
+  font-weight: 400;
+}
+.darkText {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.question:hover {
+  background-color: rgb(247, 247, 247);
+}
