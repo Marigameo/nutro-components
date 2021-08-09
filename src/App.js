@@ -8,7 +8,7 @@ import CookieBanner from "./lib/components/educative/CookieBanner";
 import EdSelect from "./lib/components/educative/EdSelect";
 import EdSearch from "./lib/components/educative/EdSearch";
 import EdButton from "./lib/components/educative/EdButton";
-import EthFAQ from './lib/components/FAQ/Ethereum'
+import EthFAQ from './lib/components/FAQ/EthFAQ'
 
 const cookieText = 'We use cookies to ensure you get the best experience on our website. Please review our <a className={styles.underline} href="/#">Privacy Policy</a> to learn more.'
 const buttonText = 'Got it!'
