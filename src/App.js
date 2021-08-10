@@ -9,6 +9,9 @@ import EdSelect from "./lib/components/educative/EdSelect";
 import EdSearch from "./lib/components/educative/EdSearch";
 import EdButton from "./lib/components/educative/EdButton";
 import EthFAQ from './lib/components/FAQ/EthFAQ'
+import QuantityButton from "./lib/components/Ecommerce/QuantityButton";
+import Toggle from "./lib/components/Ecommerce/EcomToggle";
+import ImageMagnify from "./lib/components/Ecommerce/ImageMagnify";
 
 const cookieText = 'We use cookies to ensure you get the best experience on our website. Please review our <a className={styles.underline} href="/#">Privacy Policy</a> to learn more.'
 const buttonText = 'Got it!'
@@ -57,6 +60,11 @@ const faqs = [
 function App() {
   return (
     <div className="App">
+      <ImageMagnify/>
+      <div style={{margin: '3rem'}}>
+      <QuantityButton/>
+      <Toggle/>
+      </div>
         <EthFAQ faqs={faqs}/>
       <div style={{display: 'flex', justifyContent: 'space-around', margin: '1rem'}}>
         <EdButton type='primary'>Explore courses &amp; paths</EdButton>

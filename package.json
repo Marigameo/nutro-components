@@ -2,15 +2,23 @@
   "name": "nutro-components",
   "description": "nutro-components are simple UI components inspired from popular apps that can be plugged into favourite side projects",
   "author": "mariappangameo@gmail.com",
-  "keywords": ["react", "components", "ui", "inspirations"],
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "inspirations"
+  ],
   "version": "0.1.10",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Marigameo/nutro-components.git"
+    "type": "git",
+    "url": "git+https://github.com/Marigameo/nutro-components.git"
   },
   "dependencies": {
     "@babel/cli": "^7.14.8",
@@ -23,6 +31,7 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-image-magnify": "^2.7.4",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
