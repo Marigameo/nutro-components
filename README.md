@@ -12,5 +12,7 @@ https://www.npmjs.com/package/nutro-components
 2. Gradient components
 3. Glassomorphism
 4. Educative.io inspirations
+5. FAQ components
+6. Ecommerce components (new & featured)
 
 [Documentation](https://nutro.netlify.app/)
