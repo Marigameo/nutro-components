@@ -58,6 +58,7 @@
 .customCheckbox {
   cursor: pointer;
   max-height: 28px;
+  position: relative;
   display: flex;
   flex-direction: row;
 }
