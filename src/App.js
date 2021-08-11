@@ -13,6 +13,16 @@ import QuantityButton from "./lib/components/Ecommerce/QuantityButton";
 import Toggle from "./lib/components/Ecommerce/EcomToggle";
 import ImageMagnify from "./lib/components/Ecommerce/ImageMagnify";
 
+/* slider related imports */
+import styles from  './lib/components/Ecommerce/slider/slider.module.css'
+import Slider from './lib/components/Ecommerce/slider/ProductSlider'
+import ShoeOne from './lib/components/Ecommerce/slider/images/shoe1.jpg'
+import ShoeTwo from './lib/components/Ecommerce/slider/images/shoe2.jpg'
+import ShoeThree from './lib/components/Ecommerce/slider/images/shoe3.jpg'
+import ShoeFour from './lib/components/Ecommerce/slider/images/shoe4.jpg'
+import ShoeFive from './lib/components/Ecommerce/slider/images/shoe5.jpg'
+import React from 'react'
+
 const cookieText = 'We use cookies to ensure you get the best experience on our website. Please review our <a className={styles.underline} href="/#">Privacy Policy</a> to learn more.'
 const buttonText = 'Got it!'
 
@@ -57,9 +67,36 @@ const faqs = [
     },
 ]
 
+// list of images for the slider
+const slideimages = [ShoeOne, ShoeTwo, ShoeThree, ShoeFour, ShoeFive]
+
 function App() {
   return (
     <div className="App">
+      <div className = {styles.card}>
+        <Slider 
+          size = "sm"
+          slideimages = {slideimages}
+          autoplay = {3}
+          dot = {true}
+        />
+        <div className = {styles.cardcontent}>
+            <h4 className={styles.heading}>SHOES</h4>
+            <p className = {styles.cardtext}>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque
+                  laudantium, totam rem aperiam. </p>
+        </div>
+        <div className = {styles.footer}>
+          <button>SHOP NOW 🥾</button>
+        </div>
+      </div>
+     <div className = "big-slider">
+        <Slider 
+        size = "lg"
+        slideimages = {slideimages}
+        autoplay = {3}
+        dot = {true}
+        preview = {true}/>
+     </div>
       <ImageMagnify/>
       <div style={{margin: '3rem'}}>
       <QuantityButton/>
