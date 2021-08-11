@@ -10,8 +10,10 @@ import EdSearch from "./lib/components/educative/EdSearch";
 import EdButton from "./lib/components/educative/EdButton";
 import EthFAQ from './lib/components/FAQ/EthFAQ'
 import QuantityButton from "./lib/components/Ecommerce/QuantityButton";
-import Toggle from "./lib/components/Ecommerce/EcomToggle";
+import EcomToggle from "./lib/components/Ecommerce/EcomToggle";
 import ImageMagnify from "./lib/components/Ecommerce/ImageMagnify";
+import watchImg687 from './lib/components/Ecommerce/images/wristwatch_687.jpeg';
+import watchImg1200 from './lib/components/Ecommerce/images/wristwatch_1200.jpeg';
 
 /* slider related imports */
 import styles from  './lib/components/Ecommerce/slider/slider.module.css'
@@ -70,6 +72,8 @@ const faqs = [
 // list of images for the slider
 const slideimages = [ShoeOne, ShoeTwo, ShoeThree, ShoeFour, ShoeFive]
 
+const images = [watchImg687, watchImg1200]
+
 function App() {
   return (
     <div className="App">
@@ -97,10 +101,10 @@ function App() {
         dot = {true}
         preview = {true}/>
      </div>
-      <ImageMagnify/>
+      <ImageMagnify images={images} isHintEnabled={true} />
       <div style={{margin: '3rem'}}>
       <QuantityButton/>
-      <Toggle/>
+      <EcomToggle state={false}/>
       </div>
         <EthFAQ faqs={faqs}/>
       <div style={{display: 'flex', justifyContent: 'space-around', margin: '1rem'}}>

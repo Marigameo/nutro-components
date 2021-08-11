@@ -4,7 +4,12 @@ import BtnSlider from './Controls'
 
 export default function Slider(props) {
 
-    const { dot, preview, autoplay, slideimages, size } = props
+    const { slideimages } = props
+    const autoplay = props.autoplay || null
+    const size = props.size || 'sm'
+    const dot = props.dot || false
+    const preview = props.preview || false
+
     const [slideIndex, setSlideIndex] = useState(1);
     const autoPlayRef = useRef();
 

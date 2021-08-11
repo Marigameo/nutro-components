@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import styles from './ecommerce.module.css'
 
-export default function EcomToggle() {
-    const [isActive, setActive] = useState(false)
+export default function EcomToggle({ state }) {
+    const [isActive, setActive] = useState(state)
     return (
         <label className={styles.customCheckbox} onClick={() => setActive(!isActive)}>
             <span className={styles.checkWrapper}>
