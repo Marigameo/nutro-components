@@ -94,6 +94,92 @@
   line-height: 1.3;
   font-size: 16px;
 }
+.cardWrapper {
+  margin-bottom: 50px;
+  width: 313px;
+  box-shadow: rgb(0 0 0 / 6%) 0px 4px 14px 1px;
+}
+.cardWrapper:hover {
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 9%) 0px 7px 21px 3px;
+}
+.cardImage {
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+}
+.imageContainer {
+  width: 297px;
+  min-height: fit-content;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 8px;
+  margin: 18px 0px 0px 3px;
+}
+.cardWrapper:hover .imageContainer img {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out 0.1s;
+}
+.IconWrapper {
+  width: 12px;
+}
+.details {
+  color: rgb(155, 155, 155);
+  display: flex;
+  margin-top: 6px;
+}
+.IconContainer {
+  width: 12px;
+  min-height: fit-content;
+  overflow: hidden;
+  position: relative;
+}
+.icon {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.lightText {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+.bottomSection {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin: 15px 0px 0px 3px;
+  padding-bottom: 20px;
+}
+.priceWrapper {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: fit-content;
+}
+.actualPrice {
+  font-size: 14px;
+  min-width: fit-content;
+  color: rgba(0, 0, 0, 0.34);
+  text-decoration: line-through;
+}
+.finalPrice {
+  font-size: 14px;
+  font-weight: 600;
+  min-width: fit-content;
+  color: rgb(0, 0, 0);
+  margin-right: 6px;
+}
 @media (min-width: 480px) {
   .fluid {
     flex-direction: row;

@@ -24,6 +24,9 @@ import ShoeThree from './lib/components/Ecommerce/slider/images/shoe3.jpg'
 import ShoeFour from './lib/components/Ecommerce/slider/images/shoe4.jpg'
 import ShoeFive from './lib/components/Ecommerce/slider/images/shoe5.jpg'
 import React from 'react'
+import BurgerImage from './lib/components/Ecommerce/images/burger.jpeg'
+
+import ProductCard from './lib/components/Ecommerce/Card'
 
 const cookieText = 'We use cookies to ensure you get the best experience on our website. Please review our <a className={styles.underline} href="/#">Privacy Policy</a> to learn more.'
 const buttonText = 'Got it!'
@@ -74,9 +77,19 @@ const slideimages = [ShoeOne, ShoeTwo, ShoeThree, ShoeFour, ShoeFive]
 
 const images = [watchImg687, watchImg1200]
 
+const product = {
+  image: BurgerImage,
+  name: 'Butter Paneer Kulcha Burger',
+  isVeg: false,
+  description: '557 Cal | High protein',
+  actualPrice: '₹ 209',
+  discountedPrice: '₹ 104'
+}
+
 function App() {
   return (
     <div className="App">
+      <ProductCard product={product} />
       <div className = {styles.card}>
         <Slider 
           size = "sm"

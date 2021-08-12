@@ -12,7 +12,9 @@ import EcomToggle from './components/Ecommerce/EcomToggle'
 import ImageMagnify from './components/Ecommerce/ImageMagnify'
 import QuantityButton from './components/Ecommerce/QuantityButton'
 import Slider from './components/Ecommerce/slider/ProductSlider'
+import ProductCard from './components/Ecommerce/Card'
 
 export { ClubhouseCard, ClubhouseAvatar, ClubhouseButton, 
     GradientButton, GlassButton, EdButton, EdSearch, EdSelect, 
-    CookieBanner, EthFAQ, EcomToggle, ImageMagnify, QuantityButton, Slider }
+    CookieBanner, EthFAQ, EcomToggle, ImageMagnify, QuantityButton, 
+    Slider, ProductCard }
