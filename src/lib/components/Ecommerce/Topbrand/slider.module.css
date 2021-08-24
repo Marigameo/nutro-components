@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+.largeslider {
+  max-width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-right: 10px; 
+  padding-left: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.slide {
+  
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+}
+.slide img {
+  width: 250px;
+  height: 65px;
+  padding-right: 10px; 
+  padding-left: 10px;
+
+}
+.activeanim {
+  opacity: 1;
+}
+
+.btnslide {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid rgba(34, 34, 34, 0.287);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+}
+.btnslide img {
+  width: 6px;
+  height: 6px;
+}
+.prev {
+  top: 50%;
+  left: 20px;
+}
+.next {
+  top: 50%;
+  right: 20px;
+}
+.containerdots {
+  transform: translateX(-50%);
+  display: flex;
+  margin-top: 100px;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid orangered;
+  margin: 0 5px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.dot.active {
+  background: orangered;
+}
+@media only screen 
+  and (min-device-width: 700px) 
+  and (max-device-width: 1024px) 
+{
+  .containerdots
+  {
+    margin-top: 6cm;
+  }
+  .slide img
+  {
+    margin-left: 2cm;
+  }
+
+}
+@media only screen 
+  and (min-device-width: 108px) 
+  and (max-device-width: 700px) 
+{
+  .largeslider
+  {
+    display: none;
+  }
+}
+@media only screen 
+  and (min-device-width: 1020px) 
+  and (max-device-width: 1350px) 
+{
+  .containerdots
+  {
+    margin-top: 4cm;
+  }
+
+}
