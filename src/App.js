@@ -58,6 +58,7 @@ import BurgerImage from './lib/components/Ecommerce/images/burger.jpeg'
 import ProductCard from './lib/components/Ecommerce/Card'
 import PreviewItem from "./lib/components/Ecommerce/PreviewItem";
 import Topbrands from "./lib/components/Ecommerce/Topbrand/ProductSlider";
+import Navbar from "./lib/components/Ecommerce/Navbar";
 
 const cookieText = 'We use cookies to ensure you get the best experience on our website. Please review our <a className={styles.underline} href="/#">Privacy Policy</a> to learn more.'
 const buttonText = 'Got it!'
@@ -227,9 +228,36 @@ const product = {
   discountedPrice: '₹ 104'
 }
 
+const navLinks = 
+  [
+      {
+          to: "/admin/dashboard",
+          label: "Dashboard",
+      },
+      {
+          to: "/admin/dashboard",
+          label: "About",
+      },
+      {
+          to: "/admin/dashboard",
+          label: "Contact Us",
+      },
+      {
+          to: "/admin/dashboard",
+          label: "Sign Up",
+      },
+  ]
+
+
 function App() {
   return (
     <div className="App">
+
+      <Navbar 
+      navLinks = {navLinks}
+      heading = "LOGO"
+      bg_color = "blue"
+      />
 
       <Topbrands 
       brandimages ={brandimages}
