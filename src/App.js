@@ -59,6 +59,7 @@ import ProductCard from './lib/components/Ecommerce/Card'
 import PreviewItem from "./lib/components/Ecommerce/PreviewItem";
 import Topbrands from "./lib/components/Ecommerce/Topbrand/ProductSlider";
 import Navbar from "./lib/components/Ecommerce/Navbar";
+import Gallery from "./lib/components/Ecommerce/Itemgalary";
 
 const cookieText = 'We use cookies to ensure you get the best experience on our website. Please review our <a className={styles.underline} href="/#">Privacy Policy</a> to learn more.'
 const buttonText = 'Got it!'
@@ -252,6 +253,8 @@ const navLinks =
 function App() {
   return (
     <div className="App">
+
+      <Gallery />
 
       <Navbar 
       navLinks = {navLinks}
