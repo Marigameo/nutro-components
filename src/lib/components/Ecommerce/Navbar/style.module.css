@@ -90,8 +90,11 @@ position: fixed;
 left: 0%;
 width: 100%;
 display: block;
-transition: all 0.3s ease;
 z-index: 5;
+}
+.mobileulnav
+{
+  list-style-type: none;
 }
 .mobileulnav li a
 {
