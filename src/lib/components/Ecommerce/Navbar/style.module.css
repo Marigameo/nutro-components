@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.con
+{
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+}
+.Logo
+{
+ font-size: 25px;
+ color: #fff;
+ margin-top: -10px;
+ font-family: Poppins;
+}
+
+.ulnav
+{
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-top: 05px;
+    padding-left: 50px;
+}
+.ulnav li
+{
+    padding-right: 30px;
+}
+.ulnav li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-family: Poppins;
+}
+.search {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: 1px solid rgb(193, 193, 198);
+  border-radius: 0.125rem;
+  align-items: center;
+  cursor: text;
+  display: inline-flex;
+  width: 7cm;
+  height: 1cm;
+  background-color: #fff;
+  margin-top: 11px;
+}
+
+.search:focus-within {
+  outline: 2px solid transparent;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px,
+    rgb(85, 83, 255) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  outline-offset: 2px;
+  border: 2px solid rgb(187, 219, 43);
+}
+
+.search_icon {
+  color: rgb(0, 0, 0);
+  padding-left: 0.875rem;
+  align-items: center;
+  display: flex;
+}
+
+.input_search {
+  box-sizing: border-box;
+  appearance: none;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.bar
+{
+  font-size: 35px;
+  color: #fff;
+  padding-top: 15px;
+}
+.mobilelist
+{
+background-color: rgb(26, 60, 92);
+text-align: center;
+padding: 10px;
+position: fixed;
+left: 0%;
+width: 100%;
+display: block;
+z-index: 5;
+}
+.mobileulnav
+{
+  list-style-type: none;
+}
+.mobileulnav li a
+{
+  color: #fff;
+  text-decoration: none;
+}
+.mobileulnav li 
+{
+  padding-top: 10px;
+}
+@media only screen 
+  and (min-device-width: 200px) 
+  and (max-device-width: 889px) 
+{
+  .list
+  {
+    display: none;
+  }
+}
+@media only screen 
+  and (min-device-width: 889px) 
+{
+  .bar
+  {
+    display: none;
+  }
+  .mobilelist
+  {
+    display: none;
+  }
+}

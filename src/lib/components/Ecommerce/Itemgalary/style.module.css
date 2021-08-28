@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.conbtn
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-family: Poppins;
+}
+.conbtn li
+{
+    border: 1px solid #E9E9E9;
+    padding: 14px;
+    padding-left: 70px;
+    width: 4cm;
+    font-family: Poppins;
+}
+.active
+{
+    background-color: black;
+    color: #fff;
+}
+.detailcontainer
+{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.container
+{
+    width: 300px;
+
+}
+.container:hover
+{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.cardimg
+{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+.details
+{
+    text-align: left;
+    padding-left: 20px;
+    font-family: Poppins;
+}
+.brand
+{
+    color: #A4A4A4;
+}
+.rate
+{
+    display: flex;
+    gap: 10px;
+    justify-content: start ;
+    margin-top: -30px;
+}
+.old
+{
+    color: #A4A4A4;
+    text-decoration: line-through;
+}
+.price
+{
+    color: #FF8E78;
+}
+@media only screen 
+  and (max-device-width: 790px) 
+{
+    .conbtn
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
